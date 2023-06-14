@@ -114,7 +114,7 @@ body{
 .team{
     background-color: var(--primary-fon-color);
 }
-.team-images{
+.team-images-block{
     background-color: var(--primary-white-color);
 }
 
