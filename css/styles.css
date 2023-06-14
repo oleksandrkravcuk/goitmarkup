@@ -31,43 +31,35 @@ body{
 }
 .link{
     text-decoration: none;
-    list-style: none;
 }
 .styls{
-    list-style: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-accent-color);
 }
-.link-one:hover{
-    color: var(--active-link-color);
-}
-.link-two:hover{
-    color: var(--active-link-color);
-}
-.link-sri:hover{
+.styls:hover{
     color: var(--active-link-color);
 }
 .info-styles{
     font-style: normal;
 }
-.info-mail, .info-tell{
+.inform{
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--primary-title-color);
 } 
-.info-mail:hover, .info-mail:focus{
-    color: var(--active-link-color);
-}
-.info-tell:hover, .info-tell:focus{
+.inform:hover, .inform:focus{
     color: var(--active-link-color);
 }
 
 /* header block */
+.title{
+    background-color: var(--primary-accent-color);
+}
 .head-titl{
     font-size: 56px;
     line-height: 1.07;
@@ -122,6 +114,9 @@ body{
 .team{
     background-color: var(--primary-fon-color);
 }
+.team-images{
+    background-color: var(--primary-white-color);
+}
 
 /* footer-seting */
 .foot{
@@ -146,7 +141,7 @@ body{
     color: var(--secondary-accent-color);
     background-color: var(--primary-fon-color);
 }
-.butt:hover, .button-one:focus{
+.butt:hover, .butt:focus{
     color: var(--primary-white-color);
     background-color: var(--active-link-color);
     cursor: pointer;
