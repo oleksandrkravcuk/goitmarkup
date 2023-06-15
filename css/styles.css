@@ -42,6 +42,9 @@ body{
 .st-one:hover, .st-one:focus{
     color: var(--active-link-color);
 }
+.styls:hover{
+    color: var(--active-link-color);
+}
 .info-styles{
     font-style: normal;
 }
