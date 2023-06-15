@@ -39,7 +39,7 @@ body{
     letter-spacing: 0.02em;
     color: var(--primary-accent-color);
 }
-.st-one:hover, .st-one:focus{
+.st-one:focus{
     color: var(--active-link-color);
 }
 .styls:hover{
