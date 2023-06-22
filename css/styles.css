@@ -205,7 +205,7 @@ body{
     display: flex;
     gap: 24px;
 }
-.img-cont{
+.imag-on{
     width: calc((100% - 48px) / 3);
 }
 /* team block */
@@ -267,10 +267,9 @@ body{
     gap: 24px;
     margin-bottom: 72px
 }
-.butt{
+.butt-con{
     padding: 12px 24px;
     border: 1px solid var(--primary-border-color);
-    border: none;
     border-radius: 4px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -280,7 +279,7 @@ body{
     color: var(--secondary-accent-color);
     background-color: var(--primary-fon-color);
 }
-.butt:hover, .butt:focus{
+.butt-con:hover, .butt-con:focus{
     border: 1px solid transparent;
     color: var(--primary-white-color);
     background-color: var(--active-link-color);
@@ -288,7 +287,7 @@ body{
 }
 
 /* block img grop */
-.box{
+.box-sp{
     width: calc((100% - 48px) / 3);
 }
 .box-images-bank{
