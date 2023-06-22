@@ -28,7 +28,7 @@ img{
     --secondary-accent-color: #4d5ae5;
     --active-link-color: #404bbf;
     --primary-fon-color: #F4F4FD;
-    --primary-border-color: #E7E9FC;
+    --primary-border-color: #e7e9fc;
 }
 .visually-hidden {
     position: absolute;
@@ -205,7 +205,7 @@ body{
     display: flex;
     gap: 24px;
 }
-.images{
+.img-cont{
     width: calc((100% - 48px) / 3);
 }
 /* team block */
