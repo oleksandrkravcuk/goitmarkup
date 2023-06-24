@@ -45,7 +45,6 @@ img{
 }
 body{
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
     line-height: 24px;
     font-size: 16px;
     color: var(--primary-title-color);
@@ -106,10 +105,9 @@ body{
 }
 .info-styles{
     font-style: normal;
+    margin-left: auto;
 }
-.in-mail{
-    padding-left: 332px;
-}
+
 .inform{
     font-size: 16px;
     font-weight: 400;
@@ -120,11 +118,10 @@ body{
 .inform:hover, .inform:focus{
     color: var(--active-link-color);
 }
-
 /* header block */
 .title{
     padding: 188px 0;
-    background-color: var(--primary-accent-color);
+    background-color: var(--primary-title-color);
 }
 .head-titl{
     margin: 0 auto;
@@ -205,16 +202,10 @@ body{
     display: flex;
     gap: 24px;
 }
-.imag-on{
-    width: calc((100% - 48px) / 3);
-}
 /* team block */
 .team{
     padding: 120px 0;
     background-color: var(--primary-fon-color);
-}
-.our-team{
-    padding-bottom: 72px;
 }
 .team-images{
     display: flex;
