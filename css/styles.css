@@ -2,13 +2,6 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    /* content: ''; 
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    background-color: var(--active-link-color);
-    border-radius: 2px;*/
 }
 h1, h2, h3, h4, h5, h6, p {
 	margin-top: 0;
@@ -161,7 +154,7 @@ body{
     max-width: 1440px;
     margin: 0 auto;
     background-color: var(--primary-accent-color);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/heroimg/hero.png); 
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -194,7 +187,7 @@ body{
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--primary-white-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .title-button:hover, .title-button:focus{
     background-color: var(--active-link-color);
@@ -290,8 +283,8 @@ body{
     padding: 32px 0;
 }
 .icon-link-logo{
-    width: 100%;
-    height: 100%;
+    width: 40px;
+    height: 40px;
     background-color: var(--secondary-accent-color);
     border-radius: 50%;
     display: flex;
@@ -301,6 +294,7 @@ body{
 }
 .icon-link-logo:hover, .icon-link-logo:focus{
     background-color: var(--active-link-color);
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.25);
 }
 .team-name{
     text-align: center;
@@ -327,9 +321,6 @@ body{
 .titl-cust{
     width: calc((100% - 120px) / 6);
     height: 88px;
-    /* padding: 16px 32px; 
-    border: 1px solid var(--primary-accent-color);
-    box-shadow: 4px, 0px, 4px rgba(0, 0, 0, 0.25);*/
 }
 .icon-cust{
     width: 100%;
@@ -340,11 +331,13 @@ body{
     align-items: center;
     justify-content: center;
     color: var(--prm-link-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-cust:hover, .icon-cust:focus{
     border-color: var(--active-link-color);
     color: var(--active-link-color);
 }
+
 .icon-mein{
     fill: currentColor;
 }
@@ -386,10 +379,7 @@ body{
     display: flex;
     gap: 16px;
 }
-.what-icon{
-    width: 40px;
-    height: 40px;
-}
+
 .icon-lin-log{
     width: 100%;
     height: 100%;
@@ -400,15 +390,18 @@ body{
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.ic-li:hover, .ic-li:focus{
-    stroke: var(--pr-hov-color);
-}
-.ic-li{
-    fill: #f4f4fd;
+.icon-lin-log{
+    background-color: #4d5ae5;
+    border-radius: 50%;
     width: 40px;
     height: 40px;
 }
+.icon-lin-log:hover, .icon-lin-log:focus{
+    background-color: #31d0aa;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
 /* Portfolio */
 .lk-img-butt{
     padding: 96px 0 120px 0;
