@@ -22,6 +22,7 @@ img{
     height: auto;
 }
 :root{
+    --pr-fill-color:#f4f4fd;
     --prm-link-button-color:rgba(231, 233, 252, 0.4);
     --active-link-box-color: hsl(235, 50%, 50%, 0.67);
     --pr-hov-color:#31d0aa;
@@ -196,6 +197,7 @@ body{
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
     transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .title-button:hover, .title-button:focus{
     background-color: var(--active-link-color);
@@ -290,6 +292,9 @@ body{
 .tm-text{
     padding: 32px 0;
 }
+.icn-li{
+    fill: var(--pr-fill-color);
+}
 .icon-link-logo{
     width: 40px;
     height: 40px;
@@ -301,6 +306,7 @@ body{
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
     transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-link-logo:hover, .icon-link-logo:focus{
     background-color: var(--active-link-color);
@@ -344,6 +350,7 @@ body{
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
     transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     
 }
 .icon-cust:hover, .icon-cust:focus{
@@ -411,6 +418,7 @@ body{
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
     transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-lin-log{
     background-color: #4d5ae5;
@@ -422,6 +430,9 @@ body{
     background-color: #31d0aa;
     border-radius: 50%;
     box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.25);
+}
+.icn-lin{
+    fill: var(--pr-fill-color);
 }
 
 /* Portfolio */
@@ -594,6 +605,7 @@ body{
 .modal-butt:hover, .modal-butt:focus{
     background-color: var(--active-link-color);
     border: none;
+    fill: #ffffff;
 }
 .is-hidden{
     opacity: 0;
