@@ -110,6 +110,12 @@ body{
 .styls:hover, .styls:focus{
     color: var(--active-link-color);
 }
+.st-one{
+    color: var(--active-link-color);
+}
+.st-tw{
+    color: var(--active-link-color);
+}
 .st-one::after{
     content: '';
     position: absolute;
@@ -154,7 +160,7 @@ body{
     max-width: 1440px;
     margin: 0 auto;
     background-color: var(--primary-accent-color);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -187,7 +193,9 @@ body{
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--primary-white-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .title-button:hover, .title-button:focus{
     background-color: var(--active-link-color);
@@ -290,7 +298,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-link-logo:hover, .icon-link-logo:focus{
     background-color: var(--active-link-color);
@@ -331,15 +341,25 @@ body{
     align-items: center;
     justify-content: center;
     color: var(--prm-link-color);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .icon-cust:hover, .icon-cust:focus{
     border-color: var(--active-link-color);
     color: var(--active-link-color);
 }
-
+.icon-mein:hover, .icon-mein:focus{
+    stroke: var(--active-link-color);
+    color: var(--active-link-color);
+}
 .icon-mein{
     fill: currentColor;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 /* footer-seting */
 .foot{
@@ -388,7 +408,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-lin-log{
     background-color: #4d5ae5;
@@ -546,22 +568,32 @@ body{
     left: 7px;
     fill: #000000;
     stroke: #000000;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.icon-close-black:hover, .icon-close-black:focus{
+    fill: #ffffff;
+    stroke: #ffffff;
 }
 
 .modal-butt{
     position: absolute;
+    align-items: center;
     top: 24px;
     right: 24px;
     width: 24px;
     height: 24px;
     border-radius: 50%;
     display: flex;
-    justify-content: center;
-    background-color: var(--prm-link-button-color);
+    justify-content: center; 
+    background-color: var(--primary-border-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-butt:hover, .modal-butt:focus{
+    background-color: var(--active-link-color);
+    border: none;
 }
 .is-hidden{
     opacity: 0;
