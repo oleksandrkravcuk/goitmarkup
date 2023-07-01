@@ -475,7 +475,7 @@ body{
     align-items: baseline;
 }
 /* overlay */
-.overlay{
+/* .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -488,7 +488,7 @@ body{
 }
 .ing-wrapper:hover .overlay{
     transform: translateY(0);
-} 
+}  */
 .par-text{
     position: absolute;
     top: 0;
