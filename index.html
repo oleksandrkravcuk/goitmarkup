@@ -434,15 +434,16 @@
                 <div class="com-form">
                 <label class="form-mod" for="user-comment">Comment</label></div>
                 <textarea class="text-input" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
-                <span class="boton-check">
-                <input type="checkbox" class="check-input"/>
-                <span class="form-chechbox is-hidden">
-                    <svg class="icon-click-mod" width="16" height="16" >
+                <div class="boton-check">
+                <input type="checkbox" class="check-input visually-hidden"  id="user-privacy" value="true"  name="user-privacy"/>
+                <label class="form-chechbox" for="user-privacy">
+                    <span class="one-check">
+                    <svg class="icon-click-mod" width="10" height="8" >
                         <use href="./images/icons.svg#icon-click"></use>
-                    </svg>
-                </span>
+                    </svg></span>
                 <span class="accept">I accept the terms and conditions of the <a class="accet">Privacy Policy</a></span>
-                </span>
+                </label>
+                </div>
                 <button class="but-form" type="submit">Send</button>
             </form>
         </div>
