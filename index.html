@@ -365,24 +365,24 @@
             </div>
             <div class="foot-send">
                 <p class="text-futer">Subscribe</p>
-                <ul class="ema-fut-but list">
-                    <li>
+                <form class="ema-fut-but list">
+                    <label class="york">
                         <input
                         class="form-email"
                         type="email"
                         name="maill"
                         placeholder="E-mail"
                             />
-                    </li>
-                    <li>
+                    </label>
+                    <label class="york">
                         <button class="sub-butt" type="submit">
                             Subscribe
                             <svg class="icon-send" width="24" height="24" >
                                 <use href="./images/icons.svg#icon-telegram"></use>
                             </svg>
                         </button>
-                    </li>
-                </ul>
+                    </label>
+                </form>
             </div>
         </div>
     </footer>
@@ -393,41 +393,47 @@
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
-            <strong class="mod-header">Leave your contacts and we will call you back</strong>
-            <form class="modal-form"> 
-                <label class="form-mod">Name
-                    <input class="form-input"
+            <p class="mod-header">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+                <div class="rev-form">
+                <label class="form-mod" for="user-name">Name</label></div>
+                    <div class="box-input">
+                    <input class="form-input"  id="user-name"
                     type="text"
                     name="maill"
                     required
                     />
-                    <svg class="icon-form-mod" width="18" height="18" >
+                    <svg class="icon-form-mod" width="18" height="24" >
                         <use href="./images/icons.svg#icon-person"></use>
                     </svg>
-                </label>
-                <label class="form-mod">Phone
-                    <input class="form-input"
+                    </div>
+                <div class="rev-form">
+                <label class="form-mod" for="user-name">Phone</label></div>
+                    <div class="box-input">
+                    <input class="form-input" id="user-name"
                     type="tel"
                     name="Phone"
                     required
                     />
-                    <svg class="icon-form-mod" width="18" height="18" >
+                    <svg class="icon-form-mod" width="18" height="24" >
                         <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
-                </label>
-                <label class="form-mod">Email
-                    <input class="form-input"
+                    </div>
+                <div class="rev-form">
+                <label class="form-mod" for="user-name">Email</label></div>
+                    <div class="box-input">
+                    <input class="form-input" id="user-name"
                     type="email"
                     name="maill"
                     required
                     />
-                    <svg class="icon-form-mod" width="18" height="18" >
+                    <svg class="icon-form-mod" width="18" height="24" >
                         <use href="./images/icons.svg#icon-email"></use>
                     </svg>
-                </label>
-                <label class="form-mod">Comment
-                <textarea class="text-input" name="feedback" rows="4" placeholder="Text input"></textarea>
-                </label>
+                    </div>
+                <div class="com-form">
+                <label class="form-mod" for="user-comment">Comment</label></div>
+                <textarea class="text-input" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
                 <span class="boton-check">
                 <input type="checkbox" class="check-input"/>
                 <span class="form-chechbox is-hidden">
