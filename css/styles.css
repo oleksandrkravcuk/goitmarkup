@@ -801,7 +801,7 @@ body{
     justify-content: center;
     fill: transparent;
 }
-.check-input:checked + .one-check{
+.check-input:checked + .form-chechbox .one-check{
     background-color: var(--active-link-color);
     border: none;
     fill: var(--pr-fill-color);
@@ -809,6 +809,7 @@ body{
 .icon-click-mod{
     opacity: 0;
 }
+
 .icon-form-mod{
     position: absolute;
     top: 50%;
