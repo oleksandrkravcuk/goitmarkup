@@ -806,10 +806,12 @@ body{
     border: none;
     fill: var(--pr-fill-color);
 }
+.check-input:checked + .form-chechbox >.one-check >.icon-click-mod{
+    opacity: 1;
+}
 .icon-click-mod{
     opacity: 0;
 }
-
 .icon-form-mod{
     position: absolute;
     top: 50%;
