@@ -59,15 +59,17 @@ body{
 /* block navigation */
 .wrapper{
     display: flex;
+    gap: 250px;
+    
 }
-.container{
+.conteiner{
     min-width: 320px;
     max-width: 428px;
     margin: 0 auto;
     padding: 0 15px;
 }
 .head{
-    margin-right: 116px;
+    display: block;
     font-family: "Raleway", sans-serif;
     color: var(--secondary-accent-color);
     font-weight: 800;
@@ -75,6 +77,7 @@ body{
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-top: -20px;
 }
 .link-span{
     color: var(--primary-accent-color);
@@ -135,7 +138,7 @@ body{
 .sprit-icon{
     display: none; 
 }
-.container-icon{
+.conteiner-icon{
     display: none;
 }
 .list{
@@ -183,17 +186,20 @@ body{
     margin-bottom: 72px;
 }
 .team{
-    padding: 96px 108px;
+    padding: 96px 15px;
     background-color: var(--primary-fon-color);
 }
 .team-images{
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    align-items: center;
+    justify-content: center;
     
 }
 .team-images-block{
     align-items: center;
+    justify-content: center;
     max-width: 264px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -454,7 +460,7 @@ body{
     .wrapper{
         display: flex;
     }
-    .container{
+    .conteiner{
         min-width: 768px;
         max-width: 1000px;
         margin: 0 auto;
@@ -615,6 +621,8 @@ body{
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
+        align-items: center;
+        justify-content: center;
     }
     .advantages-content{
         width: calc((100% - 120px) / 2);
@@ -649,13 +657,15 @@ body{
         margin-bottom: 72px;
     }
     .team{
-        padding: 96px 108px;
+        padding: 96px 15px;
         background-color: var(--primary-fon-color);
     }
     .team-images{
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
+        align-items: center;
+        justify-content: center;
         
     }
     .team-images-block{
@@ -723,6 +733,8 @@ body{
         }
         .customers{
             padding: 96px 0;
+            align-items: center;
+            justify-content: center;
         }
         .cust{
             display: flex;
@@ -905,7 +917,7 @@ body{
     .wrapper{
         display: flex;
     }
-    .container{
+    .conteiner{
         min-width: 1134px;
         max-width: 1200px;
         margin: 0 auto;
@@ -1710,11 +1722,12 @@ body{
     min-height: 40px;
     min-width: 40px;
     display: flex;
-    align-items: center;
+    flex: end;
+    align-items: baseline;
     justify-content: center;
 
     margin: 0;
-    padding: 25px 0;
+    padding: 24px 0;
     background-color: transparent;
     cursor: pointer;
     border: none;
@@ -1736,6 +1749,10 @@ body{
     background-color: rgba(0, 0, 0, 0.1);
 }
 .burger-lin{
+    display: block;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
     color: var(--navyblue, #2E2F42);
     font-family: "Roboto", sans-serif;
     font-size: 36px;
@@ -1747,7 +1764,30 @@ body{
 .burger-lin:hover, .burger-lin:focus{
     color: var(--ocean, #404BBF);
 }
+.inform-burg{
+    display: block;
+    margin-top: 244px;
+    margin-left: 40px;
+    color: var(--slate, #434455);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+.inform-burg:hover, .inform-burg:focus{
+    color: var(--iris, #4D5AE5);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-left: 0;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
 .inform-burger{
+    display: block;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 48px;
     color: var(--slate, #434455);
     font-size: 20px;
     font-weight: 500;
@@ -1759,10 +1799,11 @@ body{
     font-size: 36px;
     font-weight: 700;
     line-height: 40px;
+    margin-left: 0;
     letter-spacing: 0.72px;
     text-transform: capitalize;
 }
-.menu-conteiner {
+.menu-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -1776,16 +1817,19 @@ body{
     transition: transform 250ms ease-in-out;
 }
 
-.menu-conteiner.is-open {
+.menu-container.is-open {
     transform: translateX(0);
 }
 
-.menu-conteiner .menu-toggle {
+.menu-container .menu-toggle {
     position: absolute;
-    top: 16px;
-    right: 16px;
-    color: #fff;
+    top: 24px;
+    right: 24px;
+    
+    fill: currentColor;
+    stroke: #000000;
 }
+
 
 .mobile-menu {
     padding: 0;
@@ -1793,9 +1837,9 @@ body{
     list-style: none;
 }
 
-.mobile-menu .link {
+/* .mobile-menu .link {
     display: block;
     padding: 10px;
     color: #fff;
     text-decoration: none;
-}
+} */
