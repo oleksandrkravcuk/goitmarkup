@@ -59,17 +59,17 @@ body{
 /* block navigation */
 .wrapper{
     display: flex;
-    gap: 230px;
-    
+    align-items: center;
+    justify-content: space-between;
 }
 .conteiner{
-    min-width: 320px;
     max-width: 428px;
     margin: 0 auto;
     padding: 0 15px;
 }
 .head{
-    display: block;
+    display: flex;
+    align-items: center;
     font-family: "Raleway", sans-serif;
     color: var(--secondary-accent-color);
     font-weight: 800;
@@ -101,7 +101,7 @@ body{
     max-width: 428px;
     margin: 0 auto;
     background-color: var(--primary-accent-color);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpeg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/heroimg/mobile.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -153,14 +153,14 @@ body{
 .advantages{
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px;
 }
 .advantages-content{
     width: 100%;
 }
 .advan-header{
     margin-bottom: 8px;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -170,9 +170,10 @@ body{
 .advantages-text{
     font-size: 16px;
     line-height: 1.5;
+    font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--primary-title-color);
-    margin-bottom: 72px;
+    
 }
 /* images block */ 
 .images-block{
@@ -183,6 +184,7 @@ body{
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
+    font-weight: 700;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--primary-accent-color);
@@ -304,7 +306,7 @@ body{
 /* footer-seting */
 @media screen and (max-width: 767px){
     .foot{
-        padding: 96px 15px;
+        padding: 96px 0;
         background-color: var(--primary-accent-color);
     }
     .foot-log{
@@ -332,6 +334,7 @@ body{
     .footer-text{
         max-width: 264px;
         line-height: 1.5;
+        font-weight: 400;
         color: var(--primary-fon-color);
         letter-spacing: 0.02em;
         text-align: center;
@@ -409,7 +412,7 @@ body{
         text-align: center;
     }
     .form-email {
-        width: 420px;
+        width: 100%;
         height: 40px;
         background-color: transparent;
         border-radius: 4px;
@@ -422,6 +425,8 @@ body{
         letter-spacing: 0.04em;
         text-align: start;
         color: #ffffff;
+        align-items: center;
+        justify-content: center;
     }
     .form-email::placeholder{
         color: #ffffff;
@@ -462,6 +467,8 @@ body{
 /* block navigation */
     .wrapper{
         display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     .conteiner{
         min-width: 768px;
@@ -498,7 +505,8 @@ body{
     .info-styles{
         display: flex;
         flex-wrap: wrap;
-        align-items: stretch;
+        align-items: center;
+        justify-content: space-between;
         gap: 12px;
     }
     .link{
@@ -568,7 +576,7 @@ body{
         max-width: 1100px;
         margin: 0 auto;
         background-color: var(--primary-accent-color);
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpeg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/heroimg/planshet.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -946,7 +954,7 @@ body{
     }
     .heder-nav, .info-styles{
         display: flex;
-        align-items: center;
+        align-items: baseline;
     }
     .block-sidebar-title{
         display: flex;
@@ -954,7 +962,8 @@ body{
     }
     .info{
         display: flex;
-        gap: 40px;
+        justify-content: space-between;
+        align-items: center;
     }
     .link{
         text-decoration: none;
@@ -1002,7 +1011,7 @@ body{
     }
     .info-styles{
         font-style: normal;
-        margin-left: auto;
+        margin: auto;
     }
 
     .inform{
@@ -1799,13 +1808,22 @@ body{
 .backdrop .is-hidden{
     display: none;
 }
+@media screen and (max-width: 767px) {
+    .modal{
+        width: 95%;
+        max-width: 392px;
+        height: 95%;
+        max-height: 584px;
+        overflow: scroll;
+    }
+}
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 408px;
-    min-height: 584px;
+    /* width: 408px;
+    height: 584px; */
     background-color: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -1813,6 +1831,7 @@ body{
 }
 .icon-close{
     fill: currentColor;
+    stroke: currentColor;
 }
 .icon-close-black{
     position: absolute;
@@ -1823,7 +1842,6 @@ body{
 }
 .modal-butt{
     position: absolute;
-    align-items: center;
     top: 24px;
     right: 24px;
     width: 24px;
@@ -1832,6 +1850,7 @@ body{
     border-radius: 50%;
     display: flex;
     justify-content: center; 
+    align-items: center;
     background-color: var(--primary-border-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
@@ -1939,11 +1958,13 @@ body{
 }
 .but-form{
     display: block;
+    align-items: center;
+    justify-content: center;
     border: none;
     min-width: 169px;
     height: 56px;
     font-family: "Roboto", sans-serif;
-    margin-left: 95px;
+    margin: 0 auto;
     color: #ffffff;
     cursor: pointer;
     text-align: center;
@@ -2003,11 +2024,8 @@ body{
     min-height: 40px;
     min-width: 40px;
     display: flex;
-    flex: end;
     align-items: baseline;
     justify-content: center;
-
-    margin: 0;
     padding: 24px 0;
     background-color: transparent;
     cursor: pointer;
@@ -2025,10 +2043,10 @@ body{
     }
 }
 
-.menu-toggle:hover,
+/* .menu-toggle:hover,
 .menu-toggle:focus {
     background-color: rgba(0, 0, 0, 0.1);
-}
+} */
 .burger-lin{
     display: block;
     margin-top: 40px;
@@ -2042,12 +2060,12 @@ body{
     letter-spacing: 0.72px;
     text-transform: capitalize;
 }
-.burger-lin:hover, .burger-lin:focus{
-    color: var(--ocean, #404BBF);
+.st-on:visited{
+    color: var(--active-link-color);
 }
+
 .inform-burg{
     display: block;
-    margin-top: 244px;
     margin-left: 40px;
     color: var(--slate, #434455);
     font-size: 20px;
@@ -2088,11 +2106,13 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     padding: 32px;
     background-color: #FFF;
     z-index: 999;
+    display: flex;
+    flex-direction: column;
 
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
@@ -2106,15 +2126,24 @@ body{
     position: absolute;
     top: 24px;
     right: 24px;
-    
     fill: currentColor;
     stroke: #000000;
 }
 
+.syb-logo{
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+}
+.sym-icon{
+    width: 60px;
+    height: 60px;
+}
+
 
 .mobile-menu {
+    margin-bottom: auto;
     padding: 0;
-    margin: 0;
     list-style: none;
 }
 
