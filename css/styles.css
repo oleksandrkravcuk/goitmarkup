@@ -106,6 +106,13 @@ body{
     background-position: center;
     background-size: cover;
 }
+/* 2x screens, retina, 640x480 image */
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .title {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/heroimg/planshet.png);
+    }
+}
+
 .head-titl{
     margin: 0 auto;
     margin-bottom: 72px;
@@ -148,7 +155,7 @@ body{
     list-style: none;
 }
 .content-advantages{
-    padding: 96px 16px;
+    padding: 96px 0;
 }
 .advantages{
     display: flex;
@@ -209,6 +216,8 @@ body{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-white-color);
+}
+.team-images-block:not(:last-child){
     margin-bottom: 72px;
 }
 .tm-text{
@@ -272,7 +281,8 @@ body{
 .cust{
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    row-gap: 72px;
+    column-gap: 16px;
 }
 .titl-cust{
     width: calc((100% - 16px) / 2);
@@ -308,28 +318,27 @@ body{
     .foot{
         padding: 96px 0;
         background-color: var(--primary-accent-color);
+        margin: 0 auto;
     }
     .foot-log{
-        display: flex;
-        flex-wrap: wrap;
+        display: block;
         align-items: center;
         justify-content: center;
     }
     .foot-cont{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 72px;
-        align-items: center;
-        justify-content: center;
+        display: block;
+        margin-bottom: 72px;
+        margin: 0 auto;
     }
     .foot-span{
         color: var(--primary-fon-color);
     }
     .footer-link{
-        display: flex;
+        display: block;
         align-items: center;
         margin-bottom: 16px;
         margin-left: 20px;
+        text-align: center;
     }
     .footer-text{
         max-width: 264px;
@@ -338,6 +347,7 @@ body{
         color: var(--primary-fon-color);
         letter-spacing: 0.02em;
         text-align: center;
+        margin: 0 auto;
     }
     .text-footer{
         font-weight: 500;
@@ -345,20 +355,21 @@ body{
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--primary-white-color);
+        margin-top: 72px;
         margin-bottom: 16px;
         text-align: center;
     
     }
     .symbol-logo-foot{
         display: flex;
+        align-items: center;
+        justify-content: center;
         gap: 16px;
     }
     .foot-send{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-        align-items: center;
-        justify-content: center;
+        display: block;
+        margin-bottom: 16px;
+        text-align: center;
     }
     
     .icon-lin-log{
@@ -388,11 +399,10 @@ body{
         fill: currentColor;
     }
     .ema-fut-but{
-        display: flex;
-        flex-wrap: wrap;
+        display: block;
         align-items: center;
-        justify-content: center;
-        gap: 16px;
+        margin-bottom: 16px;
+        margin: 0 auto;
     }
     .text-futer {
         font-weight: 500;
@@ -410,6 +420,8 @@ body{
         letter-spacing: 0.02em;
         color: var(--primary-white-color);
         text-align: center;
+        margin-top: 72px;
+        margin-bottom: 16px;
     }
     .form-email {
         width: 100%;
@@ -456,6 +468,8 @@ body{
         justify-content: center;
         align-items: center;
         gap: 16px;
+        margin: 0 auto;
+        margin-top: 16px;
     }
     .icon-send{
         margin-left: 16px;
@@ -505,8 +519,8 @@ body{
     .info-styles{
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
         gap: 12px;
     }
     .link{
@@ -559,8 +573,7 @@ body{
     }
 
     .inform{
-        margin-left: 121px;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 0.02em;
@@ -583,6 +596,13 @@ body{
         border: 1px solid #000000;
         box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.25);  
     }
+    /* 2x screens, retina, 640x480 image */
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .title {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/heroimg/hero.png);
+    }
+}
+
     .head-titl{
         margin: 0 auto;
         margin-bottom: 48px;
@@ -631,7 +651,8 @@ body{
     .advantages{
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        row-gap: 72px;
+        column-gap: 24px;
         align-items: center;
         justify-content: center;
     }
@@ -640,7 +661,7 @@ body{
     }
     .advan-header{
         margin-bottom: 8px;
-        font-weight: 500;
+        font-weight: 700;
         font-size: 36px;
         line-height: 1.2;
         letter-spacing: 0.02em;
@@ -649,15 +670,23 @@ body{
     .advantages-text{
         font-size: 16px;
         line-height: 1.5;
+        font-weight: 500;
         letter-spacing: 0.02em;
         color: var(--primary-title-color);
-        margin-bottom: 72px;
     }
 /* images block */ 
     .images-block{
         display: none;
     }
 /* team block */
+@media only screen and (min-width: 768px) {
+    .list-section-four {
+      justify-content: center;
+       margin: 0 auto;
+       /* width: calc((100%-24px)/2);  */
+       gap: 24px;
+    }
+ }
     .our-team{
         font-size: 36px;
         line-height: 1.11;
@@ -665,18 +694,18 @@ body{
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--primary-accent-color);
-        margin-bottom: 72px;
     }
     .team{
         padding: 96px 15px;
         background-color: var(--primary-fon-color);
     }
     .team-images{
+        justify-content: center;
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
-        align-items: center;
-        justify-content: center;
+        row-gap: 64px;
+        column-gap: 24px;
         
     }
     .team-images-block{
@@ -750,7 +779,8 @@ body{
         .cust{
             display: flex;
             flex-wrap: wrap;
-            gap: 24px;
+            row-gap: 72px;
+            column-gap: 24px;
         }
         .titl-cust{
             width: calc((100% - 96px) / 3);
@@ -924,7 +954,7 @@ body{
 
 /* PC */
 /* block navigation */
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1158px){
     .wrapper{
         display: flex;
     }
@@ -964,6 +994,8 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 40px;
+        margin-left: 332px;
     }
     .link{
         text-decoration: none;
@@ -1027,7 +1059,7 @@ body{
     }
 }
    /* header block */
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1158px){
     .title{
         padding: 188px 0;
         max-width: 1440px;
@@ -1040,6 +1072,11 @@ body{
         border: 1px solid #000000;
         box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.25);  
     }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .title {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/heroimg/hero.png);
+                }
+        }
     .head-titl{
         margin: 0 auto;
         margin-bottom: 48px;
@@ -1074,7 +1111,7 @@ body{
     }
 }
     /* section advantages */
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1158px){
     .sprit-icon{
         display: flex;
         gap: 24px;
@@ -1127,8 +1164,9 @@ body{
     }
 }
     /* images block */
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1158px){
     .images-block{
+        display: block;
         padding-bottom: 120px; 
     }
     .what-are{
@@ -1146,7 +1184,7 @@ body{
     }
 }
     /* team block */
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1158px){
     .our-team{
         margin-bottom: 72px;
         font-size: 36px;
@@ -1210,7 +1248,7 @@ body{
     }
 }
     /* section customers*/
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1158px){
     .our-tea{
         margin-bottom: 72px;
         font-size: 36px;
@@ -1258,7 +1296,7 @@ body{
     }
 }
     /* footer-seting */
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1158px){
     .foot{
         padding: 100px 0;
         background-color: var(--primary-accent-color);
@@ -1452,7 +1490,7 @@ body{
     /* block img grop */
 .wrapper{
     display: flex;
-    align-items: baseline;
+    align-items: center;
 }
 
 .par-text{
@@ -1581,7 +1619,6 @@ body{
     /* block img grop */
 .wrapper{
     display: flex;
-    align-items: baseline;
 }
 .contein{
     min-width: 768px;
@@ -1665,7 +1702,7 @@ body{
 
 
 /* PC */
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1158px){
     .contein{
         min-width: 1200px;
         max-width: 1400px;
@@ -2136,8 +2173,8 @@ body{
     gap: 56px;
 }
 .sym-icon{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 
 
