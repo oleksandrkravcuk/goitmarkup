@@ -109,7 +109,7 @@ body{
 /* 2x screens, retina, 640x480 image */
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .title {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/heroimg/planshet.png);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/heroimg/mobileX2.jpg);
     }
 }
 
@@ -217,9 +217,12 @@ body{
     border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-white-color);
 }
-.team-images-block:not(:last-child){
-    margin-bottom: 72px;
+@media screen and (max-width: 767px) {
+    .team-images-block:not(:last-child){
+        margin-bottom: 72px;
+    }
 }
+
 .tm-text{
     padding: 32px 16px;
 }
@@ -346,7 +349,6 @@ body{
         font-weight: 400;
         color: var(--primary-fon-color);
         letter-spacing: 0.02em;
-        text-align: center;
         margin: 0 auto;
     }
     .text-footer{
@@ -485,8 +487,7 @@ body{
         justify-content: space-between;
     }
     .conteiner{
-        min-width: 768px;
-        max-width: 1000px;
+        max-width: 768px;
         margin: 0 auto;
         padding: 0 15px;
     }
@@ -586,7 +587,7 @@ body{
 /* header block */
     .title{
         padding: 188px 0;
-        max-width: 1100px;
+        max-width: 768px;
         margin: 0 auto;
         background-color: var(--primary-accent-color);
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/heroimg/planshet.png);
@@ -596,10 +597,10 @@ body{
         border: 1px solid #000000;
         box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.25);  
     }
-    /* 2x screens, retina, 640x480 image */
+    /* 2x screens, retina,image */
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .title {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/heroimg/hero.png);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/heroimg/planshetX2.jpg);
     }
 }
 
@@ -653,11 +654,10 @@ body{
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 24px;
-        align-items: center;
-        justify-content: center;
+        
     }
     .advantages-content{
-        width: calc((100% - 120px) / 2);
+        width: 356px;
     }
     .advan-header{
         margin-bottom: 8px;
@@ -666,6 +666,7 @@ body{
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--primary-accent-color);
+        text-align: left;
     }
     .advantages-text{
         font-size: 16px;
@@ -679,14 +680,6 @@ body{
         display: none;
     }
 /* team block */
-@media only screen and (min-width: 768px) {
-    .list-section-four {
-      justify-content: center;
-       margin: 0 auto;
-       /* width: calc((100%-24px)/2);  */
-       gap: 24px;
-    }
- }
     .our-team{
         font-size: 36px;
         line-height: 1.11;
@@ -696,7 +689,7 @@ body{
         color: var(--primary-accent-color);
     }
     .team{
-        padding: 96px 15px;
+        padding: 96px 0;
         background-color: var(--primary-fon-color);
     }
     .team-images{
@@ -710,11 +703,10 @@ body{
     }
     .team-images-block{
         align-items: center;
-        width: calc((100% - 264px) / 2);
+        /* width: calc((100% - 64px) / 2); */
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
         border-radius: 0px 0px 4px 4px;
         background-color: var(--primary-white-color);
-        margin-bottom: 72px;
     }
     .tm-text{
         padding: 32px 16px;
@@ -781,9 +773,10 @@ body{
             flex-wrap: wrap;
             row-gap: 72px;
             column-gap: 24px;
+            justify-content: center;
         }
         .titl-cust{
-            width: calc((100% - 96px) / 3);
+            width: 168px;
             height: 88px;
         }
         .icon-cust{
@@ -819,6 +812,8 @@ body{
     .foot-cont{
         display: flex;
         flex-wrap: wrap;
+        max-width: 530px;
+        gap: 72px 24px;
         
     }
     .text-fute{
@@ -828,13 +823,6 @@ body{
         letter-spacing: 0.02em;
         color: var(--primary-white-color);
         margin-bottom: 16px;
-        margin-top: 72px;
-    }
-    .foot-log{
-        margin-right: 120px;
-    }
-    .foot-lin{
-        margin-right: 80px;
     }
     .foot-span{
         color: var(--primary-fon-color);
@@ -959,8 +947,7 @@ body{
         display: flex;
     }
     .conteiner{
-        min-width: 1134px;
-        max-width: 1200px;
+        max-width: 1128px;
         margin: 0 auto;
         padding: 0 15px;
     }
@@ -995,7 +982,7 @@ body{
         justify-content: space-between;
         align-items: center;
         gap: 40px;
-        margin-left: 332px;
+        margin-left: 300px;
     }
     .link{
         text-decoration: none;
@@ -1074,7 +1061,7 @@ body{
     }
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .title {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/heroimg/hero.png);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/heroimg/people-officeX2.jpg);
                 }
         }
     .head-titl{
@@ -2170,7 +2157,12 @@ body{
 .syb-logo{
     display: flex;
     justify-content: center;
-    gap: 56px;
+    gap: 30px;
+}
+@media screen and (min-width: 428px){
+    .syb-logo{
+        gap: 56px;
+    }
 }
 .sym-icon{
     width: 40px;
