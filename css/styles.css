@@ -1290,13 +1290,9 @@ body{
     }
     .foot-cont{
         display: flex;
+        flex-wrap: nowrap;
         align-items: baseline;
-    }
-    .foot-log{
-        margin-right: 120px;
-    }
-    .foot-lin{
-        margin-right: 80px;
+        gap: 80px;
     }
     .foot-span{
         color: var(--primary-fon-color);
