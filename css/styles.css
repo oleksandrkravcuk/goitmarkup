@@ -647,7 +647,7 @@ body{
         list-style: none;
     }
     .content-advantages{
-        padding: 96px 16px;
+        padding: 96px 0;
     }
     .advantages{
         display: flex;
@@ -1146,6 +1146,7 @@ body{
     .advantages-text{
         font-size: 16px;
         line-height: 1.5;
+        font-weight: 400;
         letter-spacing: 0.02em;
         color: var(--primary-title-color);
     }
@@ -1231,7 +1232,6 @@ body{
         display: flex;
         gap: 24px;
         justify-content: center;
-        margin-bottom: 32px;
     }
 }
     /* section customers*/
